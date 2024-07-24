@@ -12,7 +12,7 @@ const writeRead = require('./routes/writeRead.js');
 const updateDelete = require('./routes/updateDelete.js');
 
 app.use('/wr',writeRead);
-app.use('/wr',updateDelete);
+app.use('/ud',updateDelete);
 
 app.use((req,res,next)=>{
        res.sendStatus(404);
